@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>FormIn</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <a class="nav_contact" href="https://www.instagram.com/jawahirulwildan">Contact Us</a>
+    </nav>
+
+    <div>
+        <form action="" name="formAbsensi" class="form" method="post" onsubmit="return validateForm()">
+            <h1>Formulir Absensi</h1>
+            
+            <div class="form_section">
+                <label for="nama" class="form_label">Nama Mahasiswa</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" class="form_input">
+                <div id="suggest_name" class="suggest"></div>
+            </div>
+            
+            <div class="form_section">
+                <label for="nrp" class="form_label">NRP</label>
+                <input type="number" id="nrp" name="nrp" placeholder="NRP (502XXXXXXX)" class="form_input">
+                <div id="suggest_nrp" class="suggest"></div>
+            </div>
+
+            <div class="form_section">
+                <label for="email" class="form_label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email (mail@domain.com)" class="form_input">
+            </div>
+
+            <div class="form_section">
+                <label for="mata_kuliah" class="form_label">Mata Kuliah</label>
+                <select name="mata_kuliah" id="mata_kuliah" class="form_select">
+                    <option value="" disabled selected>Pilih Mata Kuliah</option>
+                    <option value="grafkom">Grafika Komputer</option>
+                    <option value="jarkom">Jaringan Komputer</option>
+                    <option value="ps">Pemodelan dan Simulasi</option>
+                    <option value="pbkk">Pemrograman Berbasis Kerangka Kerja</option>
+                    <option value="pweb">Pemrograman Web</option>
+                    <option value="rsbp">Rekayasa Sistem Berbasis Pengetahuan</option>      
+                    <option value="tg">Teori Graf</option>
+                </select>
+            </div>
+
+            <div class="form_section">
+                <label for="dosen" class="form_label">Dosen</label>
+                <select name="dosen" id="dosen" class="form_select">
+                    <option value=""disabled selected>Pilih Dosen</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn_submit">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

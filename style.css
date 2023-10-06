@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    background-color: #528cc6;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: 	#095bae;
+    box-sizing: border-box;
+}
+
+.nav_logo img{
+    width: 203px;
+    height: 62px;
+}
+
+.nav_contact{
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav_contact:hover {
+    color:#84add6;
+}
+
+.form{
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #84add6;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.form > h1{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+    color: white;
+}
+
+.form_section{
+    margin: 1rem 0;
+}
+
+.form_label{
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form_input,
+.form_select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.btn_submit{
+    width: 20%;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem 1.5rem;
+
+    display: block;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+
+    background-color: #095bae;
+    color: white;
+
+    font-size: 16px;
+
+    transition: all 0.25s ease-out;
+}
+
+.btn_submit:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.suggest {
+    position: absolute;
+    overflow-y: auto;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.suggest option {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggest option:hover {
+    background-color: #f0f0f0;
+}
